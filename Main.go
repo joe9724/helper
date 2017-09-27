@@ -43,7 +43,7 @@ type Privates struct {
 var db *sql.DB
 
 func init() {
-	db, _ = sql.Open("mysql", "root:root811123@tcp(106.14.2.153:3306)/help")
+	db, _ = sql.Open("mysql", "root:root@tcp(106.14.2.153:3306)/help")
 
 	db.SetMaxOpenConns(20000)
 	db.SetMaxIdleConns(10000)
